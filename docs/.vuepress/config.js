@@ -1,4 +1,5 @@
 module.exports = {
+  base:'/blog/',
   title: '不远遐路，幸见光临',
   head:[
     ['link',{rel:'icon',href:'/favicon.ico'}]
