@@ -7,7 +7,6 @@
     "serve": "vuepress dev docs --temp .temp",
     "build": "vuepress build docs",
     "deploy": "bash deploy.sh",
-    "cname": "bash cname.sh"
   },
   "repository": {
     "type": "git",
