@@ -1,2 +1,4 @@
 node_modules
 .temp
+# 隐藏私密信息
+secret.js
