@@ -32,6 +32,10 @@ module.exports = {
       clientSecret: 'f60cbb49b75d71c6d62f397048b6dc9c2f00df50',
       autoCreateIssue: true
     },
+    '@vuepress/back-to-top': true,
+    '@vuepress/google-analytics': {
+      'ga': '296511250'
+    }
   },
   themeConfig: {
     logo: '/assets/img/logo.png',
