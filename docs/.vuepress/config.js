@@ -13,15 +13,26 @@ module.exports = {
     ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
-  plugins: [
-    '@vuepress/pwa', {
+  plugins: {
+    '@vuepress/pwa': {
       serviceWorker: true,
       updatePopup: {
         message: "发现新内容可用",
         buttonText: "刷新"
       }
-    }
-  ],
+    },
+    '@vssue/vuepress-plugin-vssue': {
+      // 设置 `platform` 而不是 `api`
+      platform: 'github-v4',
+
+      // 其他的 Vssue 配置
+      owner: 'endeavorLiu',
+      repo: 'blog',
+      clientId: '7261cae94d500fb41b64',
+      clientSecret: 'f60cbb49b75d71c6d62f397048b6dc9c2f00df50',
+      autoCreateIssue: true
+    },
+  },
   themeConfig: {
     logo: '/assets/img/logo.png',
     nav: [
