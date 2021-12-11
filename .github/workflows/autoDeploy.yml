@@ -19,7 +19,3 @@ jobs:
       - name: Deploy
         run: |
           npm run deploy
-        with: 
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}   
-          BRANCH: gh-pages
-          FOLDER: docs/.vuepress/dist
