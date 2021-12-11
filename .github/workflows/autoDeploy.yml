@@ -1,0 +1,27 @@
+name: GitHub Actions Build and Deploy
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  # This workflow contains a single job called "build"
+   build-and-deploy:
+    runs-on: ubuntu-latest
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - name: 1. git checkout...
+
+      uses: actions/checkout@v1
+
+    - name: 2. setup nodejs...
+
+      uses: actions/setup-node@v1
+      
+    - name: 3.deploy
+      
+      run: |
+        npm install
+        npm run build
+        npm run deploy
