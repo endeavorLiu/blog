@@ -29,8 +29,13 @@ module.exports = {
       },
       {
         "text": "工具箱",
-        "link": "/tools/",
-        "icon": "el-icon-folder-opened"
+        "icon": "iconfont icon-tool",
+        items: [
+          {
+            "text": "兼容性查询",
+            "link": "/docs/theme-reco/"
+          }
+        ]
       },
       {
         "text": "时间线",
@@ -38,8 +43,8 @@ module.exports = {
         "icon": "reco-date"
       },
       {
-        "text": "文档",
-        "icon": "reco-message",
+        "text": "项目",
+        "icon": "iconfont icon-Project",
         "items": [
           {
             "text": "vuepress-reco",
@@ -59,6 +64,7 @@ module.exports = {
         ]
       }
     ],
+    subSidebar: 'auto',
     "sidebar": {
       "/docs/theme-reco/": [
         "",
@@ -103,5 +109,5 @@ module.exports = {
   },
   "markdown": {
     "lineNumbers": true
-  }
+  },
 }
