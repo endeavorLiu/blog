@@ -109,7 +109,7 @@ reject()
 
 ### 06 Promise工作流程
 
-<img src="@/images/Promise工作流程.png">
+<img src="../../../.vuepress/public/images/Promise工作流程.png">
 
 ## 2.Promise API
 
