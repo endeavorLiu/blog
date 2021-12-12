@@ -1,7 +1,7 @@
 module.exports = {
   base: "/blog/",
   "title": "不远遐路，幸见光临",
-  "description": "所谓新鲜感，不是和未知的人一起去做同样的事情，而是和已知的人一起去体验未知的人生。",
+  "description": "生活本身就很匆忙了，要慢一点，别错过日落和夕阳。",
   "dest": "public",
   "head": [
     [
@@ -23,17 +23,22 @@ module.exports = {
   "themeConfig": {
     "nav": [
       {
-        "text": "Home",
+        "text": "首页",
         "link": "/",
         "icon": "reco-home"
       },
       {
-        "text": "TimeLine",
+        "text": "工具箱",
+        "link": "/tools/",
+        "icon": "el-icon-folder-opened"
+      },
+      {
+        "text": "时间线",
         "link": "/timeline/",
         "icon": "reco-date"
       },
       {
-        "text": "Docs",
+        "text": "文档",
         "icon": "reco-message",
         "items": [
           {
@@ -43,7 +48,7 @@ module.exports = {
         ]
       },
       {
-        "text": "Contact",
+        "text": "联系",
         "icon": "reco-message",
         "items": [
           {
@@ -66,11 +71,11 @@ module.exports = {
     "blogConfig": {
       "category": {
         "location": 2,
-        "text": "Category"
+        "text": "分类"
       },
       "tag": {
         "location": 3,
-        "text": "Tag"
+        "text": "标签"
       }
     },
     "friendLink": [
@@ -92,7 +97,7 @@ module.exports = {
     "searchMaxSuggestions": 10,
     "lastUpdated": "Last Updated",
     "author": "lc",
-    "authorAvatar": "/avatar.png",
+    "authorAvatar": "/avatar.jpg",
     "record": "xxxx",
     "startYear": "2017"
   },

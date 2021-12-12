@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "author": "reco_luan",
   "scripts": {
-    "dev": "vuepress dev .",
+    "dev": "vuepress dev . --temp .temp --open --host \"localhost\"",
     "build": "vuepress build ."
   },
   "devDependencies": {
     "vuepress": "1.8.2",
     "vuepress-theme-reco": "1.6.10"
   },
-  "description": "personal blog"
+  "description": "personal blog",
+  "dependencies": {
+    "core-js": "^2.6.12",
+    "element-ui": "^2.15.6"
+  }
 }

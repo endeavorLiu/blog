@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: vuepress-theme-reco
-tagline: A simple and beautiful vuepress blog theme.
+heroText: 不远遐路，幸见光临
+tagline: 生活本身就很匆忙了，要慢一点，别错过日落和夕阳。
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',
@@ -14,7 +14,7 @@ tagline: A simple and beautiful vuepress blog theme.
 bgImageStyle: {
   height: '450px'
 }
-isShowTitleInHome: false
+isShowTitleInHome: true 
 actionText: Guide
 actionLink: /views/other/guide
 features:
