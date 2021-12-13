@@ -1,7 +1,5 @@
 import iconfont from './public/iconfont/iconfont.css'
-// import heart from './JSmodules/heart'
 // import nprogress from 'nprogress'
-
 export default ({ Vue, router }) => {
   Vue.mixin({
     mounted() {

@@ -32,8 +32,9 @@ module.exports = {
         "icon": "iconfont icon-tool",
         items: [
           {
-            "text": "兼容性查询",
-            "link": "/docs/theme-reco/"
+            "text": "Vue官网",
+            "link": "https://cn.vuejs.org/v2/guide/",
+            icon: 'reco-document'
           }
         ]
       },
@@ -47,8 +48,8 @@ module.exports = {
         "icon": "iconfont icon-Project",
         "items": [
           {
-            "text": "vuepress-reco",
-            "link": "/docs/theme-reco/"
+            "text": "尚品汇前台项目",
+            "link": "/"
           }
         ]
       },
@@ -58,21 +59,21 @@ module.exports = {
         "items": [
           {
             "text": "GitHub",
-            "link": "https://github.com/recoluan",
+            "link": "https://github.com/endeavorLiu",
             "icon": "reco-github"
           }
         ]
       }
     ],
     subSidebar: 'auto',
-    "sidebar": {
-      "/docs/theme-reco/": [
-        "",
-        "theme",
-        "plugin",
-        "api"
-      ]
-    },
+    // "sidebar": {
+    //   "/docs/theme-reco/": [
+    //     "",
+    //     "theme",
+    //     "plugin",
+    //     "api"
+    //   ]
+    // },
     "type": "blog",
     "blogConfig": {
       "category": {
