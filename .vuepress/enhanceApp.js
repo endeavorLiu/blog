@@ -1,14 +1,45 @@
 import iconfont from './public/iconfont/iconfont.css'
-// import nprogress from 'nprogress'
+// import vueCobra from "vue-cobra";
+
+import nprogress from 'nprogress'
 export default ({ Vue, router }) => {
   Vue.mixin({
     mounted() {
       // 实现爱心特效
       import('./JSmodules/heart').then(function (m) {
         Vue.use(m.default)
-    })
+      })
+      // // 文档高度|可视区高度
+      // console.log(document.documentElement.offsetHeight);
+      // console.log(document.documentElement.scrollHeight);
+      // // 取窗口可视范围的高度 
+      // console.log(document.documentElement.clientHeight);
+      // router.beforeEach((to, from, next) => {
+      //   nprogress.start()
+      //   next()
+      // });
+      // router.afterEach((to, from) => {
+      //   nprogress.done()
+      // });
+      // window.addEventListener('scroll', () => {
+      //   // 滚动高度
+      //   // console.log(document.documentElement.scrollTop);
+      //   function getPercentageScroll() {
+      //     const scrollPosition = window.pageYOffset;
+      //     const bodyHeight =
+      //       document.body.clientHeight - document.documentElement.clientHeight;
+      //     let res = scrollPosition / bodyHeight;
+      //     if (res >= 1) {
+      //       res = 0.99999999
+      //     }
+      //     console.log(res);
+      //     return res
+      //   }
+      //   nprogress.set(getPercentageScroll())
+      // })
     },
-  })
+  });
+  // Vue.component("vue-cobra", vueCobra);
 }
 // 进度条效果
 // export default ({ router }) => {

@@ -13,6 +13,7 @@
   "description": "personal blog",
   "dependencies": {
     "core-js": "^2.6.12",
-    "element-ui": "^2.15.6"
+    "element-ui": "^2.15.6",
+    "vue-cobra": "^1.1.4"
   }
 }
