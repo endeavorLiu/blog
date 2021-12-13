@@ -1,12 +1,11 @@
 import iconfont from './public/iconfont/iconfont.css'
-// import vueCobra from "vue-cobra";
-
 import nprogress from 'nprogress'
+
 export default ({ Vue, router }) => {
   Vue.mixin({
     mounted() {
       // 实现爱心特效
-      import('./JSmodules/heart').then(function (m) {
+      import('./utils/heart').then(function (m) {
         Vue.use(m.default)
       })
       // // 文档高度|可视区高度
@@ -21,9 +20,8 @@ export default ({ Vue, router }) => {
       // router.afterEach((to, from) => {
       //   nprogress.done()
       // });
-      // window.addEventListener('scroll', () => {
-      //   // 滚动高度
-      //   // console.log(document.documentElement.scrollTop);
+
+      // window.addEventListener('scroll', throttle(function () {
       //   function getPercentageScroll() {
       //     const scrollPosition = window.pageYOffset;
       //     const bodyHeight =
@@ -32,11 +30,10 @@ export default ({ Vue, router }) => {
       //     if (res >= 1) {
       //       res = 0.99999999
       //     }
-      //     console.log(res);
       //     return res
       //   }
       //   nprogress.set(getPercentageScroll())
-      // })
+      // }, 500))
     },
   });
   // Vue.component("vue-cobra", vueCobra);
